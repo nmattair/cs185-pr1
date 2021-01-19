@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Text</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -18,16 +18,24 @@
         </div>
     </nav>
 
-    <h1>Text</h1>
-    
     <div class="container">
-        <section id="main">
-            <h1>Welcome</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quibusdam iusto magni, aspernatur fugiat quod reprehenderit, molestiae atque voluptatum, esse deleniti repellat dicta eveniet perspiciatis explicabo tenetur repudiandae ipsa officiis?</p>
-        </section>
-        <aside id="sidebar">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consequuntur placeat fuga inventore obcaecati praesentium exercitationem, rerum beatae?</p>
-        </aside>
+        <br>
+        <form>
+            
+            <label for="first">First Name:</label><br>
+            <input type="text" name="fname" id="first" value="John"><br>
+            <label for="last">Last Name:</label><br>
+            <input type="text" name="lname" id="last" value="Smith"><br>
+            
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+
+            <input type="submit" value="Submit">
+        </form>
     </div>
 </body>
 </html>
