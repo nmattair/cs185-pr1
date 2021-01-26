@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container">
+            <ul>
+                <li id="textLink"><a href="../index.html">Text</a></li>
+                <li id="imageLink"><a href="html/image.html">Image</a></li>
+                <li id="videoLink"><a href="html/video.html">Video</a></li>
+                <li id="tableLink"><a href="html/table.html">Table</a></li>
+                <li id="emailLink"><a href="#">Email</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <br>
+        <form id="emailForm">  
+            <label for="address">Email:</label><br>
+            <input type="text" name="email" id="address"><br>
+            <button id="submitEmail" onclick="validate()" type="button">Submit</button>
+        </form>
+    </div>
+    <div class="container" id="response"></div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Scroll to Top</button>
+
+    <script src="../main.js"></script>
+</body>
+</html>
