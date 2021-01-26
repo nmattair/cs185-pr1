@@ -22,16 +22,21 @@
     <div class="container">
         <div class="row">
             <div class="column">
-                <img src="../images/ps.jpg">
-                <img src="../images/lt.jpg">   
+                <img id="img1" alt="Palm Springs" src="../images/ps.jpg">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+                <img id="img2" alt="Lake Tahoe" src="../images/lt.jpg">
             </div>
             <div class="column">
-                <img src="../images/gc.jpg">
-                <img src="../images/zp.jpg">  
+                <img id="img3" alt="Grand Canyon" src="../images/gc.jpg">
+                <img id="img4" alt="Zion" src="../images/zp.jpg">  
             </div>
             <div class="column">
-                <img src="../images/ys.jpg">
-                <img src="../images/jt.jpg"> 
+                <img id="img5" alt="Yellowstone" src="../images/ys.jpg">
+                <img id="img6" alt="Joshua Tree" src="../images/jt.jpg"> 
             </div>
         </div>
     </div>
@@ -39,5 +44,6 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">Scroll to Top</button>
 
     <script src="../main.js"></script>
+    <script src="../js/image.js"></script>
 </body>
 </html>

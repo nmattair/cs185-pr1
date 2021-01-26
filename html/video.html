@@ -22,19 +22,23 @@
     <div class="container">
         <div class="row">
             <div class="column">
-                <video controls>
+                <video id="vid1" controls>
                     <source src="../videos/plane.mp4" type="video/mp4">
                     Your browser does not support the video tag.
-                </video>   
+                </video> 
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <video class="modal-content" id="vid01" controls></video>
+                </div>  
             </div>
             <div class="column">
-                <video controls>
+                <video id="vid2" controls>
                     <source src="../videos/leaf.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video> 
             </div>
             <div class="column">
-                <video controls>
+                <video id="vid3" controls>
                     <source src="../videos/ocean.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -45,5 +49,6 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">Scroll to Top</button>
 
     <script src="../main.js"></script>
+    <script src="../js/video.js"></script>
 </body>
 </html>
