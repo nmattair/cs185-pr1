@@ -10,37 +10,45 @@
     <nav id="navbar">
         <div class="container">
             <ul>
-                <li><a href="../index.html">Text</a></li>
-                <li><a href="image.html">Image</a></li>
-                <li><a href="#">Video</a></li>
-                <li><a href="table.html">Table</a></li>
+                <li id="textLink"><a href="../index.html">Text</a></li>
+                <li id="imageLink"><a href="image.html">Image</a></li>
+                <li id="videoLink"><a href="#">Video</a></li>
+                <li id="tableLink"><a href="table.html">Table</a></li>
+                <li id="emailLink"><a href="email.html">Email</a></li>
             </ul>
         </div>
     </nav>
     
     <div class="container">
-        <br>
-        <div style="width: 50%; float: left;">
-            <video width="320" height="180" controls>
-                <source src="../videos/plane.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+        <div class="row">
+            <div class="column">
+                <video id="vid1" controls>
+                    <source src="../videos/plane.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video> 
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <video class="modal-content" id="vid01" controls></video>
+                </div>  
+            </div>
+            <div class="column">
+                <video id="vid2" controls>
+                    <source src="../videos/leaf.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video> 
+            </div>
+            <div class="column">
+                <video id="vid3" controls>
+                    <source src="../videos/ocean.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </div>
-
-        <div style="width: 50%; margin: auto;">
-            <video width="320" height="180" controls>
-                <source src="../videos/leaf.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-
-        <div style="width: 50%; float: right;">
-            <video width="320" height="180" controls>
-                <source src="../videos/ocean.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-
     </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Scroll to Top</button>
+
+    <script src="../main.js"></script>
+    <script src="../js/video.js"></script>
 </body>
 </html>

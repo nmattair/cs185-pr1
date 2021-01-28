@@ -10,25 +10,40 @@
     <nav id="navbar">
         <div class="container">
             <ul>
-                <li><a href="../index.html">Text</a></li>
-                <li><a href="#">Image</a></li>
-                <li><a href="video.html">Video</a></li>
-                <li><a href="table.html">Table</a></li>
+                <li id="textLink"><a href="../index.html">Text</a></li>
+                <li id="imageLink"><a href="#">Image</a></li>
+                <li id="videoLink"><a href="video.html">Video</a></li>
+                <li id="tableLink"><a href="table.html">Table</a></li>
+                <li id="emailLink"><a href="email.html">Email</a></li>
             </ul>
         </div>
     </nav>
 
     <div class="container">
-        <br>
-        <img src="../images/ps.jpg" width="400px" height="266.5px" style="float: left;">
-        <img src="../images/lt.jpg" width="380px" height="285px" style="margin: auto;">
-        <img src="../images/gc.jpg" width="400px" height="266.6px" style="float: right;">
-    </div>
-    <div class="container">
-        <img src="../images/zp.jpg" width="400px" height="266.4px" style="float: left;">
-        <img src="../images/ys.jpg" width="400px" height="250px" style="margin: auto;">
-        <img src="../images/jt.jpg" width="395.5px" height="297px" style="float: right;">
+        <div class="row">
+            <div class="column">
+                <img id="img1" alt="Palm Springs" src="../images/ps.jpg">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+                <img id="img2" alt="Lake Tahoe" src="../images/lt.jpg">
+            </div>
+            <div class="column">
+                <img id="img3" alt="Grand Canyon" src="../images/gc.jpg">
+                <img id="img4" alt="Zion" src="../images/zp.jpg">  
+            </div>
+            <div class="column">
+                <img id="img5" alt="Yellowstone" src="../images/ys.jpg">
+                <img id="img6" alt="Joshua Tree" src="../images/jt.jpg"> 
+            </div>
+        </div>
     </div>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Scroll to Top</button>
+
+    <script src="../main.js"></script>
+    <script src="../js/image.js"></script>
 </body>
 </html>
